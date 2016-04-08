@@ -1,0 +1,7 @@
+{
+    "address": "your.nodemc.instance/here",
+    "apikey": "if using authmode: 'apikey', set the API key here",
+    "authmode": "apikey",
+    "port": 3000,
+    "token": "if using authmode: 'totp', generate a token and set it here"
+}

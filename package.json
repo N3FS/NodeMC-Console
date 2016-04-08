@@ -1,0 +1,16 @@
+{
+  "name": "nodemc-console",
+  "version": "1.0.0",
+  "description": "A console client for NodeMC",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MD678685",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.69.0",
+    "socket.io-client": "^1.4.5",
+    "vorpal": "^1.10.10"
+  }
+}
