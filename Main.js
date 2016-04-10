@@ -164,6 +164,8 @@ function getInfo(callback) {
             }
         } else {
             vorpal.log(error);
+            vorpal.log(response.statusCode);
+            vorpal.log(body);
             callback({error: "There was an error getting the server info."});
         }
     });
@@ -203,7 +205,7 @@ vorpal
         if (authenticated === true) {
             this.log("You are already authenticated!");
         } else {
-            auth(args.apikey, "apikey");
+            auth(args.apikey, nmcauthmode);
         }
         callback();
     });
@@ -335,4 +337,4 @@ setTimeout(function() {
     vorpal.exec("log");
 }, 500);
 
-vorpal.delimiter("NodeMC@" + nmcserver + ">").show();
+vorpal.delimiter("NodeMC @ " + nmcserver + ">").show();
